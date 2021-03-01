@@ -1,0 +1,7 @@
+{
+  "name": "ayudameApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
