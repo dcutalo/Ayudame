@@ -13,6 +13,7 @@ import {
   IonBackButton,
   IonButtons,
 } from "@ionic/react";
+import SetupInputs from "../components/SetupInputs";
 
 import "../theme/variables.css";
 
@@ -29,33 +30,7 @@ const Setup: React.FC = () => {
       </IonHeader>
       <IonContent>
         <IonItem>
-          <IonInput placeholder="Enter Location"></IonInput>
-        </IonItem>
-        <IonItem>
-          <IonCard>
-            <IonList>
-              <IonItem>
-                <IonLabel position="floating">Input 1</IonLabel>
-                <IonInput></IonInput>
-              </IonItem>
-              <IonItem>
-                <IonLabel position="floating">Input 2</IonLabel>
-                <IonInput></IonInput>
-              </IonItem>
-              <IonItem>
-                <IonLabel position="floating">Input 3</IonLabel>
-                <IonInput></IonInput>
-              </IonItem>
-              <IonItem>
-                <IonLabel position="floating">Input 4</IonLabel>
-                <IonInput></IonInput>
-              </IonItem>
-              <IonItem>
-                <IonLabel position="floating">Input 5</IonLabel>
-                <IonInput></IonInput>
-              </IonItem>
-            </IonList>
-          </IonCard>
+          <SetupInputs />
         </IonItem>
         <IonButton className="ion-float-right ion-margin">
           Find Restaurants

@@ -10,12 +10,11 @@ import {
   IonCol,
   IonModal,
 } from "@ionic/react";
-import React, { useState } from "react";
+import React from "react";
+import JoinSession from "../components/JoinSession";
 import "./Home.css";
 
 const Home: React.FC = () => {
-  const [showModal, setShowModal] = useState(false);
-
   return (
     <IonPage>
       <IonHeader>
@@ -34,15 +33,7 @@ const Home: React.FC = () => {
           </IonRow>
           <IonRow className="ion-text-center">
             <IonCol className="ion-text-center">
-              <IonModal isOpen={showModal}>
-                <p>This is modal content</p>
-                <IonButton expand="block" onClick={() => setShowModal(false)}>
-                  Close
-                </IonButton>
-              </IonModal>
-              <IonButton expand="block" onClick={() => setShowModal(true)}>
-                Join Session
-              </IonButton>
+              <JoinSession />
             </IonCol>
           </IonRow>
         </IonGrid>
